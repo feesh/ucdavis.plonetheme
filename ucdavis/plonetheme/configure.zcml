@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="ucdavis.plonetheme">
+
+  <includeDependencies package="." />
+
+  <plone:static directory="resources" type="theme" />
+
+  <genericsetup:registerProfile
+      name="default"
+      title="ucdavis.plonetheme"
+      directory="profiles/default"
+      description="Installs the ucdavis.plonetheme package"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  <!-- -*- extra stuff goes here -*- -->
+  
+</configure>
