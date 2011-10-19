@@ -1,17 +1,199 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<!-- ******************** Page title ******************** -->
+	<title>UC Davis: Unit Name / Site Title Goes Here</title> 
+	<!-- ******************** End page title ******************** -->
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-	<title>index</title>
-	
+<!-- A Modern CSS -->
+<style type="text/css" media="screen">
+	@import url(includes/main.css);
+</style>
+
+<style type="text/css" media="print">
+	@import url(includes/print.css);
+</style>
+
 </head>
 
 <body>
 
-<p>Content Here</p>
+<div id="page_content">
+
+<!--
+	This will show only in text-only browsers and allows the user
+	to skip the primary navigation and go directly to the main content of the page
+-->
+	<div id="skipnav">Skip directly to: <a href="#content">Main page content</a></div>
+
+
+	<!-- ******************** Header ******************** -->
+	<div id="header">
+	<!-- The actual logo image is the background of the logo_wrapper DIV.
+		 This makes the page more compatible with text-only browsers. -->
+		<div id="logo_wrapper">
+			<!-- This image is for the print-only style sheet and doesn't display on screen -->
+			<img id="print_logo" src ="images/common/ucdavis_logo_print.gif" alt="" width="163" height="27" />
+			
+			<a href="http://www.ucdavis.edu"><img src="images/common/spacer.gif" alt="UC Davis, University of California" width="145" height="38" border="0" hspace="0" vspace="0" /></a>
+		</div>
+		
+		<div id="search_wrapper">
+		<!-- Link to page for searching the entire campus Web -->
+			<a href="http://www.ucdavis.edu/search/">Search UC Davis</a>
+		</div>
+	</div>
+	<!-- ******************** End header ******************** -->
+	
+	
+	<!-- ******************** Page identification ******************** -->
+	<div id="page_title">
+		<h1>Unit Name / Site Title Goes Here</h1>
+	</div>
+	<!-- ******************** End page identification ******************** -->
+	
+	
+	<!-- ******************** Primary navigation ******************** -->
+	<!-- ********** First row: grey-blue ********** -->
+	<div id="primary_nav_1">
+		<ul>
+		<!-- class="first" adds the little right pointing triangle to the beginning of the row -->
+			<li><a href="section_1_1.html" class="first">Section 1.1</a></li>
+			<li><a href="section_1_2.html">Section 1.2</a></li>
+			<li><a href="section_1_3.html">Section 1.3</a></li>
+			<li><a href="section_1_4.html">Section 1.4</a></li>
+			<li><a href="section_1_5.html">Section 1.5</a></li>
+		</ul>
+	</div>
+
+	<!-- ********** Second row: gold ********** -->
+	<div id="primary_nav_2">
+		<ul>
+			<li><a href="section_2_1.html" class="first">Section 2.1</a></li>
+			<li><a href="section_2_2.html">Section 2.2</a></li>
+			<li><a href="section_2_3.html">Section 2.3</a></li>
+			<li><a href="section_2_4.html">Section 2.4</a></li>
+			<li><a href="section_2_5.html">Section 2.5</a></li>
+		</ul>
+	</div>
+	<!-- ******************** End primary navigation ******************** -->
+	
+	
+	<!-- ******************** Main two columns ******************** -->
+	<div id="main">
+	
+	<!-- ********** Left sidebar area of the page ********** -->
+		<div id="left_sidebar">
+			<div id="other_links_home">
+				<h2>Quick links</h2>
+				<ul>
+					<li><a href="">Page 1</a></li>
+					<li><a href="">Page 2</a></li>
+					<li><a href="">Page 3</a></li>
+					<li><a href="">Page 4</a></li>
+					<li><a href="">Page 5</a></li>
+				</ul>
+			</div>
+
+			<div id="ownership">
+				<p><strong><a href="http://www.news.ucdavis.edu/">Unit name goes here</a></strong></p>
+				
+				<p class="address">Location, location<br />
+				University of California, Davis<br />
+				One Shields Avenue<br />
+				Davis, CA 95616</p>
+				
+				<p class="phone">(530) 752-xxxx</p>
+			</div>
+		</div>
+		<!-- ********** End left sidebar area of the page ********** -->
+
+
+		<div id="right_content">
+			<a name="content"></a>
+		<!-- ********** Breadcrumb navigation leading back to top: **********
+			 Last item is the current page; wrap this in a span with class "here" to highlight it
+		-->
+			<div id="breadcrumbs">
+				<a href="http://www.ucdavis.edu/">UC Davis home</a> &gt; <span class="here">Unit Name / Site Title Goes Here</span>
+			</div>
+		<!-- ********** End breadcrumb navigation ********** -->
+
+
+	<!-- ******************** Main content area of the page ******************** -->
+		
+		<!-- ********** Upper right photo and caption block: **********
+				Photos may be the following widths (ID to use for the container DIV is shown in parentheses):
+					160 pixels (photo_narrow)
+					260 pixels (photo_medium)
+					360 pixels (photo_wide)
+		-->
+			<div id="photo_wide">
+				<img src="images/photos/dummy.jpg" alt="Photo: Alternate description of photo goes here" width="360" height="216" hspace="0" vspace="0" border="0" />
+				<p>Photo caption occuro odio jus exputo delenit nonummy quae aliquip turpis immitto consequat tego cui.</p>
+			</div>
+		<!-- ********** End upper right photo and caption block ********** -->
+
+			<p class="deck">Nisl utrum consequat, singularis commodo, magna augue suscipere ulciscor tego. Loquor odio quis et qui magna epulae et. Causa, te os euismod, typicus nunc nostrud nonummy. Luctus delenit velit refoveo fere volutpat torqueo.</p>
+
+			<h2 class="top">Section 1</h2>
+			<p>Description of section 1</p>
+			<ul>
+				<li><a href="section_1_1.html">Section 1.1</a><br />
+					Description of section 1.1</li>
+				<li><a href="section_1_2.html">Section 1.2</a></li>
+				<li><a href="section_1_3.html">Section 1.3</a></li>
+				<li><a href="section_1_4.html">Section 1.4</a></li>
+				<li><a href="section_1_5.html">Section 1.5</a></li>
+			</ul>
+
+			<h2>Section 2</h2>
+			<p>Description of section 2</p>
+			<ul>
+				<li><a href="section_2_1.html">Section 2.1</a></li>
+				<li><a href="section_2_2.html">Section 2.2</a></li>
+				<li><a href="section_2_3.html">Section 2.3</a></li>
+				<li><a href="section_2_4.html">Section 2.4</a></li>
+				<li><a href="section_2_5.html">Section 2.5</a></li>
+			</ul>
+
+	<!-- ******************** End main content area of the page ******************** -->
+		
+	<!-- This item is required so the columns appear to be of equal length. -->
+			<div class="clearer">&nbsp;</div>
+		</div>
+	</div>
+	<!-- ******************** End main two columns ******************** -->
+	
+	
+	<!-- ******************** Footer ******************** -->
+	<div id="footer">
+		<div id="nav_bottom">
+			<p>
+				<span id="contact_link">
+			<!-- This JavaScript block will help hide the contact e-mail address from Web spiders -->
+					<script language="JavaScript" type="text/javascript">
+						<!--
+						linkname=('Questions or comments?');
+						emailaddress=( 'dept' + 'contact'  +  '@' + 'ucda' + 'vis.edu' );
+						document.write( '<a href="mailto:' + emailaddress + '">' + linkname + '</a>' );
+						-->
+					</script>
+			<!-- End of Javascript -->
+				|</span>
+		
+		<!-- Date of last page update -->
+				<strong>Last updated</strong>: June 29, 2006
+			</p>
+			
+		<!-- Copyright information. Date range should reflect the time that the site has been up. -->
+			<p>Copyright &copy; The Regents of the University of California, Davis campus, 2005-06.  All Rights Reserved.</p>
+		</div>
+	</div>
+	<!-- ******************** End footer ******************** -->
+
+</div>
 
 </body>
 </html>
