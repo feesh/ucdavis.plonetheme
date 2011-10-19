@@ -32,9 +32,9 @@
              for per-section styling -->
         <copy attributes="class id dir" content="/html/body" theme="/html/body" />
 
-        <!-- Drop in plone body for testing -->
-        <after css:content="#visual-portal-wrapper" theme-children="/html/body" />
-
+        <drop css:theme-children="#right_content" />
+        <after css:theme-children="#right_content"
+               css:content="#portal-column-content" />
     </rules>
 
 </rules>
