@@ -777,3 +777,6 @@ html*#header:not(:empty)
 		font-size: 1px;
 		height: 15px;
 	}
+
+/* Plone fixups */
+#content {clear:none;}
