@@ -36,6 +36,7 @@
         <after css:theme-children="#right_content"
                css:content="#portal-column-content" />
 
+
         <after css:theme-children="#breadcrumbs"
                css:content="#portal-breadcrumbs" />
 
@@ -47,6 +48,15 @@
                 
         <!-- Comment out the line below if you want the second nav bar -->
         <drop css:theme-children="#primary_nav_1" />
+
+
+               
+        <drop css:theme-children="#footer" />
+        <after css:theme-children="#footer"
+               css:content="#portal-footer" />
+        <after css:theme-children="#footer"
+               css:content="#portal-colophon" />
+               
 
     </rules>
 
