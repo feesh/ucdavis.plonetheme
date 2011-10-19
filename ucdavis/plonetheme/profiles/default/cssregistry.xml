@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<object name="portal_css">
+  <stylesheet id="++theme++ucdavis.plonetheme/main.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True" />
+  <stylesheet id="++theme++ucdavis.plonetheme/print.css"
+    expression="request/HTTP_X_THEME_ENABLED | nothing"
+    applyPrefix="True" />
+</object>
