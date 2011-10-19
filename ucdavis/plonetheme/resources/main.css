@@ -50,7 +50,7 @@ body {
 	width: 100%;
 	min-height: 38px;
 	background-color: #002666;
-	background-image: url(../images/common/ucdavis_logo.gif);
+	background-image: url(++theme++ucdavis.plonetheme/ucdavis_logo.gif);
 	background-repeat: no-repeat;
 	background-position: 12px 8px;
 	border-bottom: 1px solid #FFF;
@@ -167,7 +167,7 @@ html*#header:not(:empty)
 			text-decoration: none;
 			border-bottom: 0px none;
 			padding-left: 13px;
-			background-image: url(../images/common/nav_pointer_1.gif);
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_1.gif);
 			background-repeat: no-repeat;
 			background-position: left center;
 		}
@@ -189,7 +189,7 @@ html*#header:not(:empty)
 			padding-left: 13px;
 			background-color: #97A6B4;
 			color: #2F4D6A;
-			background-image: url(../images/common/nav_pointer_1.gif);
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_1.gif);
 			background-repeat: no-repeat;
 			background-position: left center;
 		}
@@ -238,7 +238,7 @@ html*#header:not(:empty)
 			text-decoration: none;
 			border-bottom: 0px none;
 			padding-left: 13px;
-			background-image: url(../images/common/nav_pointer_2.gif);
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_2.gif);
 			background-repeat: no-repeat;
 			background-position: left center;
 		}
@@ -260,7 +260,7 @@ html*#header:not(:empty)
 			padding-left: 13px;
 			background-color: #CCAD33;
 			color: #8B6000;
-			background-image: url(../images/common/nav_pointer_2.gif);
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_2.gif);
 			background-repeat: no-repeat;
 			background-position: left center;
 		}
@@ -382,7 +382,7 @@ html*#header:not(:empty)
 			margin: 0;
 			padding: 0.4em 0.4em 1px 14px;
 			background-color: #F2EBCC;
-			background-image: url(../images/common/quicklinks_corner.gif);
+			background-image: url(++theme++ucdavis.plonetheme/quicklinks_corner.gif);
 			background-repeat: no-repeat;
 			background-position: right bottom;
 			border-bottom: 1px solid #E5D699;
