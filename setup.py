@@ -3,7 +3,7 @@ import os
 
 version = '1.0'
 
-setup(name='plonetheme.dtest',
+setup(name='ucdavis.plonetheme',
       version=version,
       description="Diazo Template",
       long_description=open("README.rst").read() + "\n" +
@@ -20,7 +20,7 @@ setup(name='plonetheme.dtest',
       url='http://svn.plone.org/svn/collective/',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['plonetheme'],
+      namespace_packages=['ucdavis'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
