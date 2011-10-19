@@ -34,7 +34,7 @@
 
         <drop css:theme-children="#right_content" />
         <after css:theme-children="#right_content"
-               css:content="#portal-column-content" />
+               css:content-children="#portal-column-content" />
                
         <drop css:theme-children="#footer" />
         <after css:theme-children="#footer"
