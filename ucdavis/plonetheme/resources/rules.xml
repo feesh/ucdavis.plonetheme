@@ -35,13 +35,26 @@
         <drop css:theme-children="#right_content" />
         <after css:theme-children="#right_content"
                css:content-children="#portal-column-content" />
-               
+
+        <after css:theme-children="#breadcrumbs"
+               css:content="#portal-breadcrumbs" />
+
+        <replace css:theme-children="#search_wrapper"
+               css:content="#portal-searchbox" />
+
+        <replace css:theme-children="#primary_nav_2"
+               css:content="#portal-globalnav" />
+                
+        <!-- Comment out the line below if you want the second nav bar -->
+        <drop css:theme-children="#primary_nav_1" />
+
         <drop css:theme-children="#footer" />
         <after css:theme-children="#footer"
                css:content="#portal-footer" />
         <after css:theme-children="#footer"
                css:content="#portal-colophon" />
                
+
     </rules>
 
 </rules>
