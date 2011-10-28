@@ -48,16 +48,28 @@
         <!-- Comment out the line below if you want the second nav bar -->
         <drop css:theme-children="#primary_nav_1" />
 
+<!--
         <drop css:theme-children="#footer" />
         <after css:theme-children="#footer"
                css:content="#portal-footer" />
         <after css:theme-children="#footer"
                css:content="#portal-colophon" />
+-->
+
+
+        <!-- if we have a "footer" portlet, remove it from the content
+             and put it into the footer area.
+         -->
+        <rules css:if-content=".portlet-static-footer">
+          <drop content="//div[contains(@class,'portlet-static-footer')]" />
+          <replace css:theme-children="#nav_bottom"
+                   css:content-children=".portlet-static-footer"
+                   method="raw" />
+        </rules>
         
         <drop css:content="#portal-column-one" attributes="class" />
         <replace css:theme-children="#left_sidebar"
                  css:content="#portal-column-one" />
-
 
     </rules>
 
