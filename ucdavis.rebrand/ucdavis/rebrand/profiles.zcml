@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ucdavis.rebrand">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="UC Davis Rebrand 2012"
+      directory="profiles/default"
+      description='Extension profile for the "UC Davis Rebrand 2012" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="ucdavis.rebrand.various"
+      title="UC Davis Rebrand 2012: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="ucdavis.rebrand.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>
