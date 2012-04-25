@@ -1,0 +1,416 @@
+
+
+
+#main {
+	width: 100%;
+	background-color: #FFF;
+	border-bottom: 1px solid #000;
+}
+
+#main .print_link {
+	display: none;
+	line-height: 0;
+}
+
+#main #left_sidebar {
+	display: none;
+}
+
+#main #right_content {
+	position: relative;
+	margin: 0 0 0 0;
+	padding: 0 0 20px 15px;
+	background-color: white;
+}
+
+#main #right_content ul.treemenu li a {
+	font-weight: bold;
+}
+
+#main #right_content #breadcrumbs {
+	display: none;
+}
+
+
+
+
+body {
+	background-color: #FFF;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	/*width: 100%;*/
+}
+
+#page_content {
+	width: 100%;
+	min-width: 780px;
+	/*margin-bottom: 10px;*/
+}
+
+#skipnav {
+	display: none;
+}
+
+
+/* ---------- Default styles for paragraphs and links ---------- */
+
+	#page_content p {
+		margin: 0 0 1em 0;
+	}
+
+	a {
+		text-decoration: none;
+		border-bottom: 0px none;
+		color: #000;
+	}
+	
+	
+/* -------------------- Header section -------------------- */
+#header {
+	width: 100%;
+	min-height: 38px;
+	padding-bottom: 0.5em;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #000;
+	background-image: none;
+}
+
+#header #logo_wrapper img {
+	display: none;
+}
+
+#header #logo_wrapper #print_logo {
+	display: block;
+	margin: 0 0 0 13px;
+}
+
+#header #search_wrapper {
+	display: none;
+}
+
+
+
+/* -------------------- page title section -------------------- */
+	#page_title {
+		border-bottom: 1px solid #000;
+	}
+	
+		#page_title h1 {
+			margin: 0;
+			padding: 0.4em 0 0.5em 13px;
+			font-family: georgia, "times new roman", times, serif;
+			font-weight: normal;
+			font-size: 2.3em;
+			color: #000;
+		}
+
+
+/* -------------------- Primary site navigation section; row one: blue-grey -------------------- */
+	#primary_nav_1, #primary_nav_2 {	
+		display: none;
+	}
+		
+	
+/* -------------------- Main content section -------------------- */	
+	#main {	
+		width: 100%;
+		border-bottom: 1px solid #000;
+	}
+	
+	/* ---------- Left sidebar ---------- */
+		#main #left_sidebar {
+			display: none;
+		}
+
+	
+	
+/* ------------------------- Right content ------------------------- */
+		#main #right_content {
+			position: relative;
+			margin: 0;
+			padding: 0 0 0 0;
+		}
+	
+
+	/* ---------- Breadcrumb navigation section ---------- */
+		#main #right_content #breadcrumbs {
+			display: none;
+		}
+
+	/* ---------- Photos for top right of main content area ---------- */
+		#main #right_content #photo_wide, #main #right_content #photo_medium, #main #right_content #photo_narrow {
+			margin: 0 0 0.5em 1em;
+		}
+				
+		#main #right_content #photo_wide {
+			width: 360px;
+		}
+				
+		#main #right_content #photo_medium {
+			width: 260px;
+		}
+				
+		#main #right_content #photo_narrow {
+			width: 160px;
+		}
+	
+		#main #right_content #photo_wide p, #right_content #photo_medium p, #right_content #photo_narrow p {
+			margin: 0 5px 0 0;
+			padding: 0;
+			font-size: 0.65em;
+			color: #2F4D6A;
+		}
+				
+		#main #right_content #photo_wide a, #right_content #photo_medium a, #right_content #photo_narrow a {
+			border-bottom: 0px none;
+		}
+				
+	/* ---------- Embedded photos for content section of page ---------- */
+		#main #right_content div.photo_right_narrowest, #main #right_content div.photo_right_narrow, #main #right_content div.photo_right_medium, #main #right_content div.photo_right_wide {
+			margin: 0.5em 0 0.5em 1em;
+		}
+		
+		#main #right_content div.photo_right_narrowest {
+			width: 100px;
+		}
+		
+		#main #right_content div.photo_right_narrow {
+			width: 160px;
+		}
+		
+		#main #right_content div.photo_right_medium {
+			width: 260px;
+		}
+		
+		#main #right_content div.photo_right_wide {
+			width: 360px;
+		}
+		
+		#main #right_content div.photo_left_narrow, #main #right_content div.photo_left_medium, #main #right_content div.photo_left_wide {
+			margin: 0.5em 1em 0.5em 15px;
+		}
+				
+		#main #right_content div.photo_left_narrow {
+			width: 160px;
+		}
+				
+		#main #right_content div.photo_left_medium {
+			width: 260px;
+		}
+				
+		#main #right_content div.photo_left_wide {
+			width: 360px;
+		}
+		
+		#main #right_content div.photo_right_narrow p, right_content div.photo_right_medium p, #main #right_content div.photo_right_wide p, #main #right_content div.photo_left_narrow p, #main #right_content div.photo_left_medium p, #main #right_content div.photo_left_wide p {
+			margin: 0 0.3em 0 0;
+			padding: 0;
+			font-size: .65em;
+			color: #2F4D6A;
+		}
+				
+	/* ---------- Spotlight box for right side of page ---------- */		
+		#main #right_content #spotlight {
+			clear: right;
+			width: 14em;
+			margin: 1em 0 0.5em 0.5em;
+			padding: 0;
+			background-color: #F2EBCC;
+			border-top: 1px solid #D7C061;
+			border-bottom: 1px solid #D7C061;
+		}
+	
+		#main #right_content #spotlight h3 {
+			margin: 0 0 0.5em 0;
+			padding: 0.5em 0.8em 0.2em 0.8em;
+			font-size: 0.9em;
+			background-color: #D2B84C;
+			border-bottom: 1px solid #D7C061;
+			color: #193C75;
+		}
+	
+		#main #right_content #spotlight ul {		
+			margin: 0.4em 0.4em 0.4em 2em;
+			padding: 0;
+			font-size: 0.8em;
+			list-style-type: disc;
+			list-style-position: inherit;
+		}
+	
+		#main #right_content #spotlight ul li {
+			margin: 0 0 0.6em 0;
+			padding: 0;
+			color: #4C4C4C;
+		}
+		
+		#main #right_content #spotlight p {
+			margin: 0.3em 0.8em 0.6em 1em;
+			padding: 0;
+			font-size: 0.8em;
+			color: #2F4D6A;
+		}
+		
+	/* ---------- Right content paragraph styles ---------- */		
+		#main #right_content p {
+			margin: 0 1em 1em 15px;
+			padding: 0;
+			font-size: 0.9em;
+			color: #000;
+		}
+		
+		#main #right_content p.top {
+			margin-top: 0;
+			padding-top: 1em;
+		}
+
+		#main #right_content p.deck, #main #right_content p.dubl_deck {
+			margin: 0 0.5em 1em 15px;
+			padding: 0;
+			font-size: 1.0em;
+			color: #666;
+		}
+		
+		#main #right_content p.deck {
+			padding-top: 1em;
+		}
+		
+		#main #right_content p.dubl_deck {
+			margin-top: 1em;
+		}
+		
+		#main #right_content p.inline_quote {
+			color: #333;
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		
+		#main #right_content p.question {
+			color: #2F4D6A;
+			font-style: italic;
+		}
+		
+		#main #right_content p.answer {
+			color: #333;
+		}
+		
+	/* ---------- Right content heading styles ---------- */
+		#main #right_content h1, h2, h3, h4 {
+			margin: 1.4em 1em 0.3em 15px;
+			padding: 0;
+			font-weight: bold;
+			color: #333;
+		}
+	
+		#main #right_content h1 {
+			margin: 1.3em 0 0.3em 15px;
+			font-size: 1.2em;
+		}
+	
+		#main #right_content h1 span.parent_page {
+			color: #888;
+		}
+	
+		#main #right_content h2 {
+			font-size: 1em;
+		}
+	
+		#main #right_content h3 {
+			font-size: 0.9em;
+		}
+		
+	/* ---------- Right content list styles ---------- */
+		#main #right_content ul, #main #right_content ol {		
+			margin: 0 0.5em 0.5em 45px;
+			padding: 0;
+			font-size: 0.9em;
+		}
+	
+		#main #right_content ul {		
+			list-style-type: disc;
+			list-style-position: outside;
+		}
+	
+		#main #right_content ul li, #main #right_content ol li {
+			margin: 0.4em 0;
+			padding: 0;
+			color: #000;
+		}
+		
+		#main #right_content ul li p.list_elem_desc, #main #right_content ol li p.list_elem_desc {
+			margin: 0.5em 0 0.5em 0;
+		}
+		
+		#main #right_content ul li {
+			padding-left: 0.2em;
+		}
+
+		#main #right_content ol li {
+			margin-left: 15px;
+		}
+
+		#main #right_content ul li span, #main #right_content ol li span {
+			color: #666;
+		}
+	
+		/* hide from PC IE: fixes non-wrapping LI elements in Firefox */
+		/* hides from IE5-mac \*/
+		#main #right_content > ul li {
+			width: 100%;
+		}
+		/* end hide from IE5-mac */
+		
+		#main #right_content ul li span {
+			color: #666;
+		}
+	
+		#main #right_content ul ul, #main #right_content ol ol, #main #right_content ul ol, #main #right_content ol ul {
+			margin: 0 0 0 15px;
+			font-size: 0.9em;
+		}
+	
+		#main #right_content ul ul, #main #right_content ol ul {
+			list-style-type: circle;
+			list-style-position: outside;
+		}
+	
+
+/* --------------- Footer section --------------- */
+/* ---------- Contains the "other" navigation and the copyright info, etc. ---------- */
+	#footer {
+		clear: left;
+		font-size: 0.7em;
+		text-align: center;
+		color: #4C4C4C;
+	}
+	
+	#footer #nav_other {
+		background-color: #FFF;
+		margin: 5px 0 0 0;
+	}
+	
+	#footer #nav_bottom {
+		background-color: #FFF;
+		margin: 5px 0 0 0;
+	}
+
+	#footer #nav_bottom p {
+		margin: 0;
+		padding: 0 0 0.8em 0;
+	}
+	
+	#footer #contact_link {
+		display: none;
+	}
+
+
+
+/* --------------- For clearing two column sections --------------- */
+	.clearer {
+		clear: both;
+		margin: 0;
+		padding: 1em 0;
+		font-size: 1px;
+		height: 15px;
+	}

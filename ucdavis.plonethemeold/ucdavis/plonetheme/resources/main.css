@@ -1,0 +1,782 @@
+body {
+	background-color: #FFF;
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	/*width: 100%;*/
+}
+
+#page_content {
+	width: 100%;
+	min-width: 780px;
+	/*margin-bottom: 10px;*/
+}
+
+#skipnav {
+	display: none;
+}
+
+/* ---------- Default styles for paragraphs and links ---------- */
+
+	#page_content p {
+		margin: 0 0 1em 0;
+	}
+
+	#page_content a {	
+		text-decoration: none;
+		padding: 0;
+		margin: 0;
+		border-bottom: 1px solid;
+	}
+	
+	#page_content a:link, #page_content a:visited {
+		color: #002666;
+	}
+	
+	#page_content a:hover {	
+		text-decoration: none;
+		color: #77160B;
+		border-bottom: 0px none;
+	}
+	
+	#page_content a:active {
+		color: #77160B;
+	}
+	
+	
+/* -------------------- Header section -------------------- */
+#header {
+	width: 100%;
+	min-height: 38px;
+	background-color: #002666;
+	background-image: url(++theme++ucdavis.plonetheme/ucdavis_logo.gif);
+	background-repeat: no-repeat;
+	background-position: 12px 8px;
+	border-bottom: 1px solid #FFF;
+	/* this overflow setting is necessary for Macintosh Internet Explorer */
+	overflow: hidden;
+}
+
+/*CSS hack to target older Gecko browsers (e.g., NS 7.1)*/
+html*#header:not(:empty)
+{
+	overflow: auto;
+}
+
+#header #logo_wrapper {
+	float: left;
+	width: 274px;
+}
+
+    #header #logo_wrapper #print_logo {
+        display: none;
+    }
+
+	#header #logo_wrapper a {
+		border-bottom: 0px none;
+	}
+	
+#header #search_wrapper {
+	float: right;
+	width: 50%;
+	margin: 11px 8px;
+	text-align: right;
+}
+
+	#header #search_wrapper a {
+		border-bottom: 0px none;
+		font-size: 0.8em;
+		color: #FFF;
+		padding: 4px 8px 4px 8px;
+	}
+
+	#header #search_wrapper a:hover {
+		background-color: #335185;
+	}
+
+
+/* -------------------- page title section -------------------- */
+	#page_title {
+	/* this clear setting is necessary for Macintosh Internet Explorer */
+		clear: both;
+		background-color: #FFF;
+	/* Options for bottom borders: */
+		border-bottom: 1px solid #6D8297;		/* Use this one if page title is followed by primary_nav_1 */
+		/*border-bottom: 1px solid #BF9900;*/	/* Use this one if page title is followed by primary_nav_2; i.e., primary_nav_1 is not used */
+	}
+	
+	#page_title h1 {
+		margin: 0;
+		padding: 0.4em 0 0.5em 13px;
+		font-family: georgia, "times new roman", times, serif;
+		font-weight: normal;
+		font-size: 2.3em;
+		color: #002666;
+	}
+
+	#page_title h1 a {
+		text-decoration: none;
+		border-bottom: 0px none;
+		color: #002666;
+	}
+
+
+/* -------------------- Primary site navigation section; row one: blue-grey -------------------- */
+	#primary_nav_1 {	
+		position: relative;
+		background-color: #ACB8C3;
+	/* Options for bottom borders: */
+		border-bottom: 1px solid #FFF;			/* Use this one if primary_nav_1 is followed by primary_nav_2 */
+		/*border-bottom: 1px solid #002666;*/	/* Use this one if primary_nav_1 is to be used alone; i.e., only there is only one navigation bar */
+		overflow: hidden;
+	}
+	
+/*CSS hack to target older Gecko browsers (e.g., NS 7.1)*/
+	html*#primary_nav_1:not(:empty)
+	{
+		overflow: auto;
+	}
+
+		#primary_nav_1 ul {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			font-size: 0.7em;
+		}
+		
+		#primary_nav_1 ul li {
+			display: inline;
+		}
+		
+		#primary_nav_1 ul li a, #primary_nav_1 ul li span.here, #primary_nav_1 ul li span.first_here {
+			float: left;
+			padding: 0.3em 0.6em 0.4em;
+			font-weight: bold;
+			color: #002666;
+			white-space: nowrap;
+			border-right: 1px solid #8294A6;
+		}
+		
+		#primary_nav_1 ul li a {
+			text-decoration: none;
+			border-bottom: 0px none;
+		}
+		
+		#primary_nav_1 ul li a.first {
+			text-decoration: none;
+			border-bottom: 0px none;
+			padding-left: 13px;
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_1.gif);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		
+		#primary_nav_1 ul li a:hover {
+			background-color: #97A6B4;
+		}
+		
+		#primary_nav_1 ul li a.first:hover {
+			background-color: #97A6B4;
+		}
+		
+		#primary_nav_1 ul li span.here {
+			background-color: #97A6B4;
+			color: #2F4D6A;
+		}
+		
+		#primary_nav_1 ul li span.first_here {
+			padding-left: 13px;
+			background-color: #97A6B4;
+			color: #2F4D6A;
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_1.gif);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		
+		
+/* -------------------- Primary site navigation section; row two: gold -------------------- */
+	#primary_nav_2 {	
+		position: relative;
+		background-color: #D2B84C;
+		border-bottom: 1px solid #002666;
+		overflow: hidden;
+	}
+	
+/*CSS hack to target older Gecko browsers (e.g., NS 7.1)*/
+	html*#primary_nav_2:not(:empty)
+	{
+		overflow: auto;
+	}
+
+		#primary_nav_2 ul {
+			padding: 0;
+			margin: 0;
+			width: 100%;
+			font-size: 0.7em;
+		}
+		
+		#primary_nav_2 ul li {
+			display: inline;
+		}
+		
+		#primary_nav_2 ul li a, #primary_nav_2 ul li span.here, #primary_nav_2 ul li span.first_here {
+			float: left;
+			padding: 0.3em 0.6em 0.4em;
+			font-weight: bold;
+			color: #002666;
+			white-space: nowrap;
+			border-right: 1px solid #BF9900;
+		}
+		
+		#primary_nav_2 ul li a {
+			text-decoration: none;
+			border-bottom: 0px none;
+		}
+		
+		#primary_nav_2 ul li a.first {
+			text-decoration: none;
+			border-bottom: 0px none;
+			padding-left: 13px;
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_2.gif);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		
+		#primary_nav_2 ul li a:hover {
+			background-color: #CCAD33;
+		}
+		
+		#primary_nav_2 ul li a.first:hover {
+			background-color: #CCAD33;
+		}
+		
+		#primary_nav_2 ul li span.here {
+			background-color: #CCAD33;
+			color: #8B6000;
+		}
+		
+		#primary_nav_2 ul li span.first_here {
+			padding-left: 13px;
+			background-color: #CCAD33;
+			color: #8B6000;
+			background-image: url(++theme++ucdavis.plonetheme/nav_pointer_2.gif);
+			background-repeat: no-repeat;
+			background-position: left center;
+		}
+		
+	
+/* -------------------- Main content section -------------------- */	
+	#main {	
+		width: 100%;
+		background-color: #E5D699;
+		border-bottom: 1px solid #002666;
+	}
+	
+	/* ---------- Left sidebar ---------- */
+		#main #left_sidebar {
+			position: relative;
+			float: left;
+			background-color: #E5D699;
+			width: 10em;
+			padding: 0;
+		}
+
+		#main #left_sidebar a {
+			border-bottom: 0px none;
+		}
+		
+	/* ---------- Left sidebar list styles ---------- */
+		#main #left_sidebar ul {
+			margin: 0;
+			margin-bottom: 1.5em;
+			padding: 0;
+			font-size: 0.7em;
+			list-style-type: none;
+		}
+		
+		#main #left_sidebar ul li {
+			margin: 0;
+			padding: 0;
+			color: #4C4C4C;
+		}
+		
+	/* This is a hack to correct line spacing problem in Windows Internet Explorer */
+		* html #main #left_sidebar ul li {
+			padding-top: 1px;
+			padding-bottom: 1px;
+		}
+		
+		#main #left_sidebar ul li a {
+			position: relative;
+			display: block;
+			padding: 0.3em 8px 0.3em 14px;
+			margin: 0;
+		}
+		
+		#main #left_sidebar ul li a:hover {
+			background-color: #D9C266;
+		}
+		
+		#main #left_sidebar ul li.here, #main #left_sidebar ul li p.here {
+			position: relative;
+			padding: 0.3em 8px 0.3em 14px;
+			background-color: #DFCC80;
+			color: #000;
+			font-weight: bold;
+		}
+		
+		#main #left_sidebar ul li p.here {
+			margin-bottom: 0;
+		}
+		
+		#main #left_sidebar ul li ul {
+			margin: 0;
+			padding: 0;
+			font-size: 0.9em;
+		}
+		
+		#main #left_sidebar ul li ul li a {
+			padding: 0.2em 8px 0.2em 28px;
+			margin: 0;
+		}
+		
+		#main #left_sidebar ul li ul li.here {
+			padding-left: 28px;
+		}
+	
+	/* ---------- Left sidebar Level 2 navigation styles ---------- */
+	#main #left_sidebar #level2_nav {
+		margin: 0;
+		padding: 0;
+	}
+	
+		#main #left_sidebar #level2_nav h2 {
+			position: relative;
+			margin: 0;
+			padding: 3.5em 0.4em 1px 14px;
+			border-bottom: 1px solid #D2B84C;
+			font-size: 0.85em;
+			font-weight: bold;
+			color: #2F4D6A;
+		}
+	
+		#main #left_sidebar #level2_nav ul li ul li {
+			border-bottom: 1px solid #E5D699;
+		}
+		
+	/* ---------- Left sidebar Other Links navigation styles ---------- */
+	/*    (often used for Quick Links)   */
+	#main #left_sidebar #other_links {
+		margin: 0;
+		padding: 0;
+	}
+
+	#main #left_sidebar #other_links_home {
+		margin: 0;
+		padding: 2.1em 0 0;
+	}
+
+		#main #left_sidebar #other_links h2, #main #left_sidebar #other_links_home h2 {
+			position: relative;
+			margin: 0;
+			padding: 0.4em 0.4em 1px 14px;
+			background-color: #F2EBCC;
+			background-image: url(++theme++ucdavis.plonetheme/quicklinks_corner.gif);
+			background-repeat: no-repeat;
+			background-position: right bottom;
+			border-bottom: 1px solid #E5D699;
+			font-size: 0.85em;
+			font-weight: bold;
+			color: #2F4D6A;
+		}
+		
+		#main #left_sidebar #other_links ul, #main #left_sidebar #other_links_home ul {
+			position: relative;
+			background-color: #ECE0B2;
+		}
+	
+		#main #left_sidebar #other_links ul li a:hover, #main #left_sidebar #other_links_home ul li a:hover {
+			background-color: #DFCC80;
+		}
+	
+		#main #left_sidebar #other_links ul li.here, #main #left_sidebar #other_links_home ul li.here {
+			background-color: #E5D699;
+		}
+	
+		
+	/* ---------- Left sidebar content ownership box ---------- */
+	#main #left_sidebar #ownership {
+		margin: 2em 14px 2em 14px;
+		padding: 0.5em 0 0.5em 0;
+		border-top: 1px solid #C4A440;
+		border-bottom: 1px solid #C4A440;
+	}
+
+		#main #left_sidebar #ownership p {
+			margin: 0.2em 0 0.4em 0;
+			font-size: 0.8em;
+			color: #2F4D6A;
+		}
+	
+		#main #left_sidebar #ownership p.address, #main #left_sidebar #ownership p.phone, #main #left_sidebar #ownership p.email {
+			margin: 0.4em 0 0.5em 0;
+			font-size: 0.7em;
+		}
+		
+		#main #left_sidebar #ownership p.email a {
+			text-decoration: none;
+			padding: 0;
+			margin: 0;
+			border-bottom: 1px solid;
+		}
+	
+	
+/* ------------------------- Right content ------------------------- */
+	#main #right_content {
+		position: relative;
+		margin: 0 0 0 10em;
+		padding: 0 0 0 0;
+		background-color: #FFF;
+	}
+	
+
+	/* ---------- Breadcrumb navigation section ---------- */
+		#main #right_content #breadcrumbs {
+			margin: 0;
+			padding: 4px 5px 4px 5px;
+			background-color: #EAEDF0;
+			font-size: 0.65em;
+			text-align: right;
+		}
+		
+		#main #right_content #breadcrumbs a {
+			border-bottom: 0px none;
+			padding: 0 0.2em 0 0.2em;
+		}
+		
+		#main #right_content #breadcrumbs span.here {
+			margin: 0;
+			padding: 0 0.2em 0 0.2em;
+			font-weight: bold;
+		}
+
+	/* ---------- Photos for top right of main content area ---------- */
+		#main #right_content #photo_wide, #main #right_content #photo_medium, #main #right_content #photo_narrow {
+			position: relative;
+			float: right;
+			margin: 0 0 0.5em 1em;
+		}
+				
+		#main #right_content #photo_wide {
+			width: 360px;
+		}
+				
+		#main #right_content #photo_medium {
+			width: 260px;
+		}
+				
+		#main #right_content #photo_narrow {
+			width: 160px;
+		}
+	
+		#main #right_content #photo_wide p, #right_content #photo_medium p, #right_content #photo_narrow p {
+			margin: 0 5px 0 0;
+			padding: 0;
+			font-size: 0.65em;
+			color: #2F4D6A;
+		}
+				
+		#main #right_content #photo_wide a, #right_content #photo_medium a, #right_content #photo_narrow a {
+			border-bottom: 0px none;
+		}
+				
+	/* ---------- Embedded photos for content section of page ---------- */
+		#main #right_content div.photo_right_narrowest, #main #right_content div.photo_right_narrow, #main #right_content div.photo_right_medium, #main #right_content div.photo_right_wide {
+			position: relative;
+			float: right;
+			margin: 0.5em 0 0.5em 1em;
+		}
+		
+		#main #right_content div.photo_right_narrowest {
+			width: 100px;
+		}
+		
+		#main #right_content div.photo_right_narrow {
+			width: 160px;
+		}
+		
+		#main #right_content div.photo_right_medium {
+			width: 260px;
+		}
+		
+		#main #right_content div.photo_right_wide {
+			width: 360px;
+		}
+		
+		#main #right_content div.photo_left_narrow, #main #right_content div.photo_left_medium, #main #right_content div.photo_left_wide {
+			position: relative;
+			float: left;
+			margin: 0.5em 1em 0.5em 15px;
+		}
+				
+		#main #right_content div.photo_left_narrow {
+			width: 160px;
+		}
+				
+		#main #right_content div.photo_left_medium {
+			width: 260px;
+		}
+				
+		#main #right_content div.photo_left_wide {
+			width: 360px;
+		}
+		
+		#main #right_content div.photo_right_narrow p, #main #right_content div.photo_right_medium p, #main #right_content div.photo_right_wide p, #main #right_content div.photo_left_narrow p, #main #right_content div.photo_left_medium p, #main #right_content div.photo_left_wide p {
+			margin: 0 0.3em 0 0;
+			padding: 0;
+			font-size: .65em;
+			color: #2F4D6A;
+		}
+				
+	/* ---------- Spotlight box for right side of page ---------- */		
+		#main #right_content #spotlight {
+			clear: right;
+			position: relative;
+			width: 14em;
+			float: right;
+			margin: 1em 0 0.5em 0.5em;
+			padding: 0;
+			background-color: #F2EBCC;
+			border-top: 1px solid #D7C061;
+			border-bottom: 1px solid #D7C061;
+		}
+	
+		#main #right_content #spotlight h3 {
+			margin: 0 0 0.5em 0;
+			padding: 0.5em 0.8em 0.2em 0.8em;
+			font-size: 0.9em;
+			background-color: #D2B84C;
+			border-bottom: 1px solid #D7C061;
+			color: #193C75;
+		}
+	
+		#main #right_content #spotlight ul {		
+			margin: 0.4em 0.4em 0.4em 2em;
+			padding: 0;
+			font-size: 0.8em;
+			list-style-type: disc;
+			list-style-position: inherit;
+		}
+	
+		#main #right_content #spotlight ul li {
+			margin: 0 0 0.6em 0;
+			padding: 0;
+			color: #4C4C4C;
+		}
+		
+		#main #right_content #spotlight p {
+			margin: 0.3em 0.8em 0.6em 1em;
+			padding: 0;
+			font-size: 0.8em;
+			color: #2F4D6A;
+		}
+		
+	/* ---------- Right content paragraph styles ---------- */		
+		#main #right_content p {
+			margin: 0 1em 1em 15px;
+			padding: 0;
+			font-size: 0.9em;
+			color: #4C4C4C;
+		}
+		
+		#main #right_content p.top {
+			margin-top: 0;
+			padding-top: 1em;
+		}
+
+	/* Deck: a block of larger copy at the top of the page
+		Use dubl_deck if you need to extend the deck to more than one paragraph */
+		#main #right_content p.deck, #main #right_content p.dubl_deck {
+			margin: 0 0.5em 1em 15px;
+			padding: 0;
+			font-size: 1.0em;
+			color: #666;
+		}
+		
+		#main #right_content p.deck {
+			padding-top: 1em;
+		}
+		
+		#main #right_content p.dubl_deck {
+			margin-top: 1em;
+		}
+		
+		
+	/* Inline quotes: takes the place of blockquote tag for indenting copy */
+		#main #right_content p.indent_para {
+			padding-left: 3em;
+			padding-right: 3em;
+		}
+		
+		#main #right_content blockquote {
+			color: #2F4D6A;
+			margin: 1em 0 1em 15px;
+			padding-left: 3em;
+			padding-right: 3em;
+			font-size: 0.9em;
+		}
+		
+	/* Right and left pull quotes */
+		#main #right_content div.right_pullquote, #main #right_content div.left_pullquote {
+			/*clear: right;*/
+			position: relative;
+			width: 12em;
+			float: right;
+			margin: 1em 0.5em 1em 1em;
+			padding: 0.8em;
+			border-top: 1px solid #D7C061;
+			border-bottom: 1px solid #D7C061;
+		}
+
+		#main #right_content div.right_pullquote {
+			float: right;
+			margin: 1em 0.5em 1em 1em;
+		}
+
+		#main #right_content div.left_pullquote {
+			float: left;
+			margin: 1em 1em 1em 15px;
+		}
+
+		#main #right_content div.right_pullquote p.quote, #main #right_content div.left_pullquote p.quote {
+			font-size: 1em;
+			color: #2F4D6A;
+		}
+
+		#main #right_content div.right_pullquote p.source, #main #right_content div.left_pullquote p.source {		
+			font-size: 0.85em;
+			color: #2F4D6A;
+			font-style: italic;
+		}
+
+	/* Question and answer format */
+		#main #right_content p.question {
+			color: #2F4D6A;
+			font-style: italic;
+		}
+		
+		#main #right_content p.answer {
+			color: #333;
+		}
+		
+	/* ---------- Right content heading styles ---------- */
+		#main #right_content h1, h2, h3, h4 {
+			margin: 1.4em 1em 0.3em 15px;
+			padding: 0;
+			font-weight: bold;
+			color: #2F4D6A;
+		}
+	
+		#main #right_content h1 {
+			margin: 1.3em 0 0.3em 15px;
+			font-size: 1.2em;
+		}
+	
+		#main #right_content h1 span.parent_page {
+			color: #888;
+		}
+	
+		#main #right_content h2 {
+			font-size: 1em;
+		}
+	
+		#main #right_content h3 {
+			font-size: 0.9em;
+		}
+		
+	/* ---------- Right content list styles ---------- */
+		#main #right_content ul, #main #right_content ol {		
+			margin: 0 0.5em 0.5em 45px;
+			padding: 0;
+			font-size: 0.9em;
+		}
+	
+		#main #right_content ul {		
+			list-style-type: disc;
+			list-style-position: outside;
+		}
+	
+		#main #right_content ul li, #main #right_content ol li {
+			margin: 0.4em 0;
+			padding: 0;
+			color: #4C4C4C;
+		}
+		
+		#main #right_content ul li p.list_elem_desc, #main #right_content ol li p.list_elem_desc {
+			margin: 0.5em 0 0.5em 0;
+		}
+		
+		#main #right_content ul li {
+			padding-left: 0.2em;
+		}
+
+		#main #right_content ol li {
+			margin-left: 15px;
+		}
+
+		#main #right_content ul li span, #main #right_content ol li span {
+			color: #666;
+		}
+	
+		#main #right_content ul li span {
+			color: #666;
+		}
+	
+		#main #right_content ul ul, #main #right_content ol ol, #main #right_content ul ol, #main #right_content ol ul {
+			margin: 0 0 0 15px;
+			font-size: 0.9em;
+		}
+	
+		#main #right_content ul ul, #main #right_content ol ul {
+			list-style-type: circle;
+			list-style-position: outside;
+		}
+	
+
+/* --------------- Footer section --------------- */
+/* ---------- Contains the "other" navigation and the copyright info, etc. ---------- */
+	#footer {
+		clear: left;
+		font-size: 0.7em;
+		text-align: center;
+		color: #4C4C4C;
+	}
+	
+	#footer #nav_other {
+		background-color: #FFF;
+		margin: 5px 0 0 0;
+	}
+	
+	#footer #nav_bottom {
+		background-color: #FFF;
+		margin: 5px 0 0 0;
+	}
+
+	#footer #nav_bottom p {
+		margin: 0;
+		padding: 0 0 0.8em 0;
+	}
+
+
+/* --------------- For clearing two column sections --------------- */
+	.clearer {
+		clear: both;
+		margin: 0;
+		padding: 1em 0;
+		font-size: 1px;
+		height: 15px;
+	}
+
+/* Plone fixups */
+#content {clear:none;}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xslt="http://www.w3.org/1999/XSL/Transform"
+    >
+
+    <rules css:if-content="#visual-portal-wrapper">
+        <theme href="index.html" />
+
+        <!-- Copy standard header tags, including base (very important for
+             Plone default pages to work correctly), meta, title and
+             style sheets/scripts, in the order they appear in the content.
+         -->
+        <drop theme="/html/head/meta" />
+        <drop theme="/html/head/title" />
+        <drop theme="/html/head/base" />
+        <drop theme="/html/head/style" />
+        <drop theme="/html/head/script" />
+        <drop theme="/html/head/link" />
+        <drop theme="/html/head/comment()" />
+        
+        <after content="/html/head/meta" theme-children="/html/head" />
+        <after content="/html/head/title" theme-children="/html/head" />
+        
+        <after
+            content="/html/head/base | /html/head/style | /html/head/script | /html/head/link | /html/head/comment()"
+            theme-children="/html/head"
+            />
+
+        <!-- Copy over the id/class attributes on the body tag. This is important
+             for per-section styling -->
+        <copy attributes="class id dir" content="/html/body" theme="/html/body" />
+
+        <drop css:theme-children="#right_content" />
+        <after css:theme-children="#right_content"
+               css:content-children="#portal-column-content" />
+
+        <after css:theme-children="#breadcrumbs"
+               css:content="#portal-breadcrumbs" />
+
+        <replace css:theme-children="#search_wrapper"
+               css:content="#portal-searchbox" />
+
+        <replace css:theme-children="#primary_nav_2"
+               css:content="#portal-globalnav" />
+                
+        <!-- Comment out the line below if you want the second nav bar -->
+        <drop css:theme-children="#primary_nav_1" />
+
+<!--
+        <drop css:theme-children="#footer" />
+        <after css:theme-children="#footer"
+               css:content="#portal-footer" />
+        <after css:theme-children="#footer"
+               css:content="#portal-colophon" />
+-->
+
+
+        <!-- if we have a "footer" portlet, remove it from the content
+             and put it into the footer area.
+         -->
+        <rules css:if-content=".portlet-static-footer">
+          <drop content="//div[contains(@class,'portlet-static-footer')]" />
+          <replace css:theme-children="#nav_bottom"
+                   css:content-children=".portlet-static-footer"
+                   method="raw" />
+        </rules>
+        
+        <drop css:content="#portal-column-one" attributes="class" />
+        <replace css:theme-children="#left_sidebar"
+                 css:content="#portal-column-one" />
+
+    </rules>
+
+</rules>
