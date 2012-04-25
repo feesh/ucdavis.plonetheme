@@ -1,0 +1,672 @@
+/*
+    Style sheet for supplemental styles:
+        Use this to modify existing styles or to add new styles.
+            This file is linked last in the <head> section of the page
+                allowing for ease of overriding existing styles.
+*/
+
+
+
+
+/*----------------------- HEADER ------------------------*/
+
+
+/* HEADER LINKS SECTION */
+
+    #site_title #title_area_links ul#links {
+        margin-right: 6.3em;
+    }
+    
+    #site_title #title_area_links p {
+        float: right;
+        margin: 0.5em 6em 0 0.75em;
+        padding: 0.2em 5px 5px 0.75em;
+        position: relative;
+        border-left: 1px solid #002855;
+    }
+
+        #site_title #title_area_links p a {
+            font-size: 0.75em;
+            font-weight: bold;
+            margin: 0.85em 0 0;
+            border-bottom: 0px none;
+            color: #002855;
+        }
+
+        #site_title #title_area_links p a:hover {
+            border-bottom: 1px solid;
+        }
+
+
+    /* RESOURCES */
+
+    #site_title #title_area_links #resources {
+        position: absolute;
+        top: 0;
+        right: -14px;
+        width: 7.8em;S
+        z-index: 2;
+    }
+    
+    #site_title #title_area_links #resources h2 {
+        font-size: 0.75em;
+        color: #002855;
+        margin: 4px 0 -1px 0.75em;
+        padding: 4px 5px 5px 1em;
+        width: 7.0em;
+        float: right;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    #site_title #title_area_links #resources h2 a {
+        color: #002855;
+        border-bottom: #FFF;
+    }
+    
+    #site_title #title_area_links #resources h2 a:hover,
+    #site_title #title_area_links #resources h2 a:focus {
+        color: #002855;
+        border-bottom: #002855;
+    }
+    
+        #site_title #title_area_links #resources h2.closed {
+            background: #FFF url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_small_down.gif') scroll no-repeat 90% 45%;
+            border-top: 1px solid #FFF;
+            border-right: 1px solid #FFF;
+            border-bottom: 1px solid #FFF;
+            border-left: 1px solid #002855;
+        }
+        
+        #site_title #title_area_links #resources h2.hover {
+            background: #FFF url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_small_down.gif') scroll no-repeat 90% 45%;
+        }
+    
+        #site_title #title_area_links #resources h2.open {
+            background: #FFF url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_small_up.gif') scroll no-repeat 90% 35%;
+            border-top: 1px solid #002855;
+            border-right: 1px solid #002855;
+            border-bottom: 1px solid #FFF;
+            border-left: 1px solid #002855;
+        }
+            
+    #site_title #title_area_links #resources #resources_popout {
+        float: right;
+        clear: right;
+        border: 1px solid #002855;
+        background: #FFF;
+        margin-top: 0px;
+        display: none;
+        width: 22.5em;
+    }
+    
+        #site_title #title_area_links #resources #resources_popout ul {
+            list-style-type: none;
+        }
+        
+        #site_title #title_area_links #resources #resources_popout ul#resources_main {
+            float: left;
+            width: 30%;
+            font-weight: bold;
+            padding: 0.5em 0 1em 0.75em;
+            margin: 0;
+        }
+        
+        #site_title #title_area_links #resources #resources_popout ul#resources_secondary {
+            float: right;
+            width: 60%;
+            padding: 0.5em 0.5em 1em 0;
+            margin: 0;
+        }
+        
+            #site_title #title_area_links #resources #resources_popout ul li {
+                float: none;
+                padding: 0.25em 0.35em 0.25em 0;
+                line-height: 90%;
+                margin: 0;
+                display: block;
+            }
+            
+                #site_title #title_area_links #resources #resources_popout ul li a {
+                    display: inline;
+                    border-bottom: 1px solid #E6E9F0;
+                    margin: 0;
+                }
+                
+                #site_title #title_area_links #resources #resources_popout ul li a:hover,
+                #site_title #title_area_links #resources #resources_popout ul li a:focus {
+                    border-bottom: 1px solid #002855;
+                }
+            
+            
+    #site_title #innovate {
+        margin: 0;
+        padding: 1.6em 0 0 0;
+        overflow: hidden;
+        position: absolute;
+        right: 20px;
+        bottom: 0;
+    }
+
+        #site_title #innovate a {
+            border: 0 none;
+        }
+
+        #site_title #innovate img {
+            border: 0 none;
+        }
+
+
+/*----------------------- NAV AREA DROP-DOWN MENU ------------------------*/
+
+#nav {
+    position: absolute;
+}
+
+#nav ul li {
+    width: 8em;
+}
+
+#nav ul ul {
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+    #nav .bar_1 ul ul li {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        font-size: 80%;
+        border-left: 0px none;
+    }
+    
+        #nav ul li a {
+            text-transform: uppercase;
+        }
+
+    #nav ul ul li a {
+        display: block;
+        padding: 0.3em 10px;
+        text-transform: none;
+        line-height: 120%;
+        width: auto !important;
+        border-bottom: 1px solid #002855;
+    }
+
+    #nav .bar_1 .nav_wrapper ul ul li a:hover,
+    #nav .bar_1 .nav_wrapper ul ul li a:focus {
+        border-bottom: 1px solid #7F93AA;
+        background-color: #002855;
+    }
+    
+
+
+/*----------------------- SEARCH FEATURE ------------------------*/
+
+#search {
+    float: right;
+    margin: 0.4em 14px 0 0.3em;
+    padding: 0;
+    font-size: 1em;
+    width: 11em;
+    overflow: hidden;
+}
+
+#search form {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #667D9D;
+}
+
+#search form.bordered {
+    border-bottom: 1px solid #667D9D;
+}
+
+#search form.unbordered {
+    border-bottom: 0px none;
+}
+
+
+    #search #search_field {
+        margin-right: 0.6em;
+        overflow: hidden;
+    }
+
+    #search_options {
+        padding: 0.5em 0 0.75em 0.375em;
+        margin: 0;
+        font-size: 0.625em;
+        overflow: hidden;
+    }
+    
+        #search_options a {
+            color: #CCD4E0;
+            border-bottom: 1px solid #667D9D;
+        }
+        
+        #search_options a:hover,
+        #search_options a:focus {
+            border-bottom: 1px solid #1A3E68;
+        }
+        
+    #search input.text_area {
+        background-color: #E5E9EF;
+        border: 1px solid #335379;
+        color: #333;
+        padding: 0.3em;
+        margin: 0.275em 0 0.275em;
+        float: left;
+        height: 1.3em;
+        width: 100%;
+        font-size: 0.7em;
+    }
+
+    #search input.submit_button {
+        background: #335379 url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_search.gif') scroll no-repeat center center;
+        width: 2em;
+        height: 2em;
+        border: 1px solid #335379;
+        margin: 0;
+        padding: 0;
+/*    text-indent: -9000px;*/
+        float: left;
+        overflow: hidden;
+        padding-top: 2em;
+    }
+
+    #search input.submit_button:hover,
+    #search input.submit_button:focus {
+        background: #335379 url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_search_hover.gif') scroll no-repeat center center;
+    }
+    
+    #search #search_controls {
+        overflow: hidden;
+    }
+    
+    #search input.inputsubmit {
+        background: #335379;
+        border: 1px solid #335379;
+        margin: 0.5em 0.5em 0 0;
+        padding: 0;
+        color: #FFF;
+        font-size: .67em;
+        float: left;
+        overflow: hidden;
+    }
+
+    #search input.inputsubmit:hover,
+    #search input.inputsubmit:focus {
+        background: #667D9D;
+        cursor: pointer;
+    }
+
+
+/*  #search #search_controls {
+        display: none;
+    }*/
+
+#search_plus {
+    float: right;
+    clear: right;
+    margin: 0.375em 10px 10px 0;
+    width: 11em;
+    padding: 0;
+}
+
+    #search_plus h2 {
+        color: #CCD4E0;
+        font-size: 0.85em;
+        font-weight: normal;
+        margin: 0 0 0.1em 0;
+        padding: 0;
+        text-transform: none;
+    }
+
+    #search_plus ul {
+        list-style-type: none;
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #nav #search_plus ul li {
+            border-left: 0 none;
+            float: none;
+            width: auto;
+            margin: 0 0 0 0.8em;
+            padding: 0;
+            line-height: 110%;
+        }
+
+            #search_plus ul li a {
+                display: inline;
+                border-left: 0 none;
+                border-bottom: 1px solid #667D9D;
+                color: #CCD4E0;
+                margin: 0;
+                padding: 0;
+                text-transform: none;
+                font-size: 0.75em;
+/*            line-height: 1.5em;*/
+            }
+
+            #search_plus ul li a:hover,
+            #search_plus ul li a:focus {
+                background: none !important;
+                border-bottom: 1px solid #1A3E68;
+            }
+
+
+/*------------------------------BREADCRUMBS------------------------------*/
+
+#breadcrumbs_container {
+    padding-top: 3em;
+}
+
+/*----------------------- SOCIAL MEDIA WIDGET ------------------------*/
+
+#social_media_container {
+    position: fixed;
+    z-index: 9999;
+    top: 200px;
+    left: -200px;
+    width: 268px;
+}
+
+    #social_media_widget {
+        width: 268px;
+        overflow: hidden;
+    }
+
+        #social_media_tab {
+            width: 68px;
+            float: right;
+            background-color: #4D688C;
+        }
+
+        #social_media_tab #click_tab {
+            float: right;
+            width: 20px;
+            height: 177px;
+            background-color: #C99700;
+        }
+
+        #social_media_tab #click_tab a {
+            display: block;
+            width: 20px;
+            height: 177px;
+            background: #C99700 url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/sm_arrow_right_blue.gif') no-repeat;
+            border: 0px none;
+        }
+
+        #social_media_tab ul.sm_buttons {
+            float: right;
+            width: 48px;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            #social_media_tab ul.sm_buttons li {
+                margin: -5px 0 0 0;
+                padding: 0;
+            }
+
+            #social_media_tab ul.sm_buttons li.top {
+                margin-top: 0;
+            }
+
+                #social_media_tab ul.sm_buttons li a {
+                    border-bottom: 0px none;
+                    padding: 5px 5px 5px 4px;
+                    display: block;
+                }
+
+                #social_media_tab ul.sm_buttons li a img {
+                    border: 0px none;
+                }
+
+                #social_media_tab ul.sm_buttons li a:hover {
+                    border-bottom: 0px none;
+                    background-color: #7F93AE;
+                }
+
+        #social_media_info {
+            width: 200px;
+            float: right;
+            background-color: #4D688C;
+            margin: 0;
+            padding: 0;
+        }
+
+            #info_box {
+                margin: 10px;
+                background-color: #FFF;
+                overflow: hidden;
+            }
+
+                #info_box h3 {
+                    font-size: 0.9em;
+                    margin: 0.5em 8px 0;
+                }
+                
+/*            fb-like is commented out below because it has to be repeated in the later style, which is being used.
+                Facebook seems to only allow this class to be titled 'fb-like'*/
+
+/*            div.fb-like {
+                    margin: 4px 0 0.8em 8px;
+                }*/
+
+                #info_box ul {
+                    margin: 0.5em 0;
+                    padding: 0;
+                    list-style-type: none;
+                    font-size: 0.8em;
+                }
+
+                #info_box ul li {
+                    margin: 0 5px 0.6em 8px;
+                    padding: 0;
+                }
+
+                #info_box p {
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    margin: 1.5em 8px 0.8em;
+                    padding: 0;
+                }
+
+    #social_media_shadow {
+/*    position: absolute;
+        top: 187px;
+        left: 0;*/
+        width: 54px;
+        margin: 0;
+        padding: 0;
+        background: transparent url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/nav_shadow_light2.png') scroll repeat-x top left;
+        overflow: hidden;
+        height: 10px;
+    }
+    
+/*-------DROP-DOWN SOCIAL MEDIA BOX---------*/
+    
+#social_media_container_drop {
+/*  position: fixed;*/
+/*  z-index: 9999;*/
+/*  top: 200px;*/
+/*  left: -200px;*/
+/*  width: 268px;*/
+    margin: 0 0 1em;
+}
+
+    #social_media_widget_drop {
+/*    width: 268px;*/
+        overflow: hidden;
+    }
+
+        #social_media_tab_drop {
+/*        width: 68px;*/
+/*        float: right;*/
+            background-color: #002855;
+        }
+
+        #social_media_tab_drop ul.sm_buttons_drop {
+/*        float: right;*/
+/*        width: 48px;*/
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+            #social_media_tab_drop ul.sm_buttons_drop li {
+                margin: 0 0 0 -5px;
+                padding: 0;
+                float: left;
+            }
+
+            #social_media_tab_drop ul.sm_buttons_drop li.left {
+                margin-left: 0;
+            }
+
+                #social_media_tab_drop ul.sm_buttons_drop li a {
+                    border-bottom: 0px none;
+                    padding: 5px 5px 5px 4px;
+                    display: block;
+                }
+
+                #main #social_media_tab_drop ul.sm_buttons_drop li a.no_linkout[href^="http://"], 
+                #main #social_media_tab_drop ul.sm_buttons_drop li a.no_linkout[href^="https://"] {
+                    padding-right: 5px;
+                }
+
+                #social_media_tab_drop ul.sm_buttons_drop li a img {
+                    border: 0px none;
+                }
+
+                #social_media_tab_drop ul.sm_buttons_drop li a:hover {
+                    border-bottom: 0px none;
+                    background-color: #7F93AE;
+                }
+
+        #social_media_info_drop {
+/*        width: 200px;*/
+/*        float: right;*/
+/*        background-color: #4D688C;*/
+            background-color: #002855;
+            margin: 0;
+            padding: 0;
+        }
+        
+            #social_media_info_drop #click_tab_drop {
+    /*        float: right;*/
+    /*        width: 20px;*/
+                height: 20px;
+                background-color: #C99700;
+            }
+
+            #social_media_info_drop #click_tab_drop a {
+                display: block;
+    /*        width: 20px;*/
+                height: 20px;
+                border: 0px none;
+            }
+            
+                #social_media_info_drop #click_tab_drop a.closed {
+                    background: #C99700 url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_small_down.gif') no-repeat scroll center center;
+                }
+                
+                #social_media_info_drop #click_tab_drop a.open {
+                    background: #C99700 url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/arrow_small_up.gif') no-repeat scroll center center;
+                }
+                
+                #social_media_info_drop #click_tab_drop a.closed:hover,
+                #social_media_info_drop #click_tab_drop a.closed:focus,
+                #social_media_info_drop #click_tab_drop a.open:hover,
+                #social_media_info_drop #click_tab_drop a.open:focus {
+                    background-color: #DAAA00;
+                }
+
+            #info_box_drop {
+                margin: 0 1px 1px;
+                background-color: #FFF;
+                overflow: hidden;
+            }
+
+                #info_box_drop h3 {
+                    font-size: 0.9em;
+                    margin: 0.5em 8px 0;
+                }
+
+                div.fb-like {
+                    margin: 4px 0 0.8em 8px;
+                }
+
+                #info_box_drop ul {
+                    margin: 0.5em 0;
+                    padding: 0;
+                    list-style-type: none;
+                    font-size: 0.8em;
+                }
+
+                #info_box_drop ul li {
+                    margin: 0 5px 0.6em 8px;
+                    padding: 0;
+                }
+
+                #info_box_drop p {
+                    font-size: 0.9em;
+                    font-weight: bold;
+                    margin: 1.5em 8px 0.8em;
+                    padding: 0;
+                }
+
+    #social_media_shadow_drop {
+/*    position: absolute;
+        top: 187px;
+        left: 0;*/
+        width: 54px;
+        margin: 0;
+        padding: 0;
+        background: transparent url('https://cmsresources.ucdavis.edu:8443/cms_v2/images/common/nav_shadow_light2.png') scroll repeat-x top left;
+        overflow: hidden;
+        height: 10px;
+    }
+
+
+/*----------------------- MAIN ------------------------*/
+
+.nav_second ul li a,
+.nav_second ul li.here {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+
+#main #right_column .content_box ul.photo_list {
+    list-style-type: none;
+    margin: 0 0 1.5em 0;
+    padding: 0;
+}
+
+#main #right_column .content_box ul.photo_list li {
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+#main #right_column .content_box ul.photo_list li a {
+    display: block;
+    overflow: hidden;
+    border-bottom: 0px none;
+}
+
+#main #right_column .content_box ul.photo_list img {
+    width: 100%;
+}
+
+
+/*----------------------- FOOTER ------------------------*/
+
+#footer #aggies a {
+    border: 0px none;
+}

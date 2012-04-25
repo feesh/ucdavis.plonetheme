@@ -1,0 +1,119 @@
+
+/*------------------------------BACKGROUND COLOR BELOW FOOTER------------------------------*/
+
+body {
+    background-color: #FFF;
+}
+
+
+/*------------------------------PRIMARY SECTION GUTTER BACKGROUNDS------------------------------*/
+
+#header {
+    background-color: #FFF;
+}
+
+#site_title {
+    background-color: #FFF;
+}
+
+#nav .bar_1 {
+    background-color: #335379;
+}
+
+#nav .bar_2 {
+    background-color: #D9B64C;
+}
+
+#breadcrumbs_container {
+    background-color: #FFF;
+}
+
+#main {
+    background-color: #FFF;
+}
+
+#footer {
+    background-color: #FFF;
+}
+
+
+/*------------------------------PRIMARY SECTION CONTENT SETTINGS------------------------------*/
+
+#header_content {
+    background-color: #FFF;
+}
+
+#title_area_content {
+    background-color: #FFF;
+}
+
+.bar_1 .nav_content {
+    background: #002855 url('../../images/common/navbar_gradient_dark_blue.gif') scroll repeat-x left top;
+}
+
+.bar_2 .nav_content {
+    background: #DAAA00 url('../../images/common/navbar_gradient_dark_gold.gif') scroll repeat-x left top;
+}
+
+#breadcrumbs_content {
+    background-color: #FFF;
+}
+
+#main_content {
+    background-color: #FFF;
+}
+
+#footer_content {
+    background-color: #FFF;
+}
+
+/*------------------------------HEADER------------------------------*/
+
+/* No header for this scheme */
+
+#header {
+    display: none;
+}
+
+
+/*------------------------------NAVIGATION BARS------------------------------*/
+
+#nav {
+    border-top: 1px solid #002855;
+}
+
+#nav .bar_1 .nav_content ul li a.here {
+    background-color: transparent;
+}
+
+
+
+/* Enable drop-shadow for nav bar */
+
+#nav:after {
+    content: '';
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent url('../../images/common/nav_shadow_light2.png') scroll repeat-x top left;
+    height: 10px;
+    bottom: -14px;
+    position: absolute;
+    border-top: 4px solid #DAAA00;
+}
+
+/*------------------------------PAGE TITLE--------------------------*/
+
+#main #page_title h2 {
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    font-size: 2.25em;
+}
+
+
+/*------------------------------FOOTER------------------------------*/
+
+#footer {
+    border-top: 1px solid #B2B2B2;
+}
+
