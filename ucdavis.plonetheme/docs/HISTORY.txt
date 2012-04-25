@@ -1,0 +1,15 @@
+Changelog
+=========
+
+1.1.3 (2011-07-20)
+------------------
+
+- Bug fixes. Instead of putting in the bits from sunburst, responsive theme just 
+  points to it. This fixes many problems: Double breadcrumbs, icons disappearing, 
+  searchbox positioning, portal-top not having class="row" and the site logo not 
+  being clickable
+
+1.0 (2011-05-26)
+----------------
+
+- Initial release

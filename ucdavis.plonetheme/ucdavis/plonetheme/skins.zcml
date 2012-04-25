@@ -1,0 +1,10 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    i18n_domain="ucdavis.plonetheme">
+
+  <cmf:registerDirectory name="ucdavis_plonetheme_styles"/>
+ 
+
+
+</configure>

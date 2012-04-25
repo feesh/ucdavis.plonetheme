@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="Responsive Theme">
+
+    <object name="plonetheme_ucdavis.plonethemetheme_custom_templates" remove="True" />
+    <object name="plonetheme_ucdavis.plonethemetheme_js" remove="True" />
+  
+    <skin-path name="Responsive Theme" based-on="Sunburst Theme">
+        <layer name="plonetheme_ucdavis.plonethemetheme_styles" remove="True"/>
+        <layer name="plonetheme_ucdavis.plonethemetheme_js" remove="True"/>
+    </skin-path>
+
+</object>

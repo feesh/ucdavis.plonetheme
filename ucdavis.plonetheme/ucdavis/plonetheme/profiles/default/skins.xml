@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="UCDavis Plonetheme">
+
+ <object name="ucdavis.plonetheme_styles"
+    meta_type="Filesystem Directory View"
+    directory="ucdavis.plonetheme:skins/ucdavis_plonetheme_styles" />
+
+ <skin-path name="UCDavis Plonetheme" based-on="Sunburst Theme">
+  <layer name="ucdavis_plonetheme_styles"
+     insert-after="custom"/>
+ </skin-path>
+
+</object>
