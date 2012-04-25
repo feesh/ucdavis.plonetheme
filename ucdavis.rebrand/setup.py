@@ -25,6 +25,7 @@ setup(name='ucdavis.rebrand',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'plone.app.theming',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
