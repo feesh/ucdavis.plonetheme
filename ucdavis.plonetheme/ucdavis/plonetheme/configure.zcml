@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="ucdavis.plonetheme">
+  <five:registerPackage package="." initialize=".initialize" />
+  <include package=".browser" />
+  <include file="skins.zcml" />
+  <include package=".upgrades" />
+  <include file="profiles.zcml" />
+  <i18n:registerTranslations directory="locales" />
+  
+    <!-- Use jbot for template overrides -->
+    <include package="z3c.jbot" file="meta.zcml" />
+
+    <browser:jbot
+        directory="templates"
+        layer=".browser.interfaces.IPlonethemeTheme" />
+
+</configure>

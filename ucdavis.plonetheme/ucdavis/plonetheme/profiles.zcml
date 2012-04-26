@@ -1,0 +1,41 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="ucdavis.plonetheme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="ucdavis plonetheme"
+      directory="profiles/default"
+      description='An installable theme for Plone 4.x that uses a fluid grid system'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <!--
+  <genericsetup:registerProfile
+      name="1001to1002"
+      title="Upgrade to ResponsiveTheme profile 1002"
+      description="" 
+      directory="profiles/1001to1002"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+  -->
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="ucdavis plonetheme Uninstall"
+      directory="profiles/uninstall"
+      description='Uninstall profile for the "Responsive Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="ucdavis.plonetheme.various"
+      title="Responsive Theme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="ucdavis.plonetheme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+
+</configure>

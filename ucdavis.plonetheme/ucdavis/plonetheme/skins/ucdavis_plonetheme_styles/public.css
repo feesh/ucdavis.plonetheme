@@ -30,7 +30,7 @@ iframe { border-width: 0; border-style:none; }
 /* @group Basics */
 
 body {
-    font-family: "Lucida Grande","Lucida Sans Unicode","Verdana","Arial",sans-serif;
+    font: 100% Verdana, FreeSans, sans-serif;
     background: White;
     color: Black;
     /* width: 58em; margin: 1em auto; */
@@ -101,7 +101,7 @@ q {
 
 #portal-logo {
     display: inline-block;
-    margin: 1.375em 5%;
+    margin: 1.375em 0;
 }
 
 #portal-globalnav {
@@ -111,15 +111,12 @@ q {
     border-bottom: 0.3em solid #BF9900;
     /* ensure top navigation dont touches portlets, content etc.. #10491 */
     margin: 0 0 1em 0;
-    padding: 0 5%;
-    -webkit-box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 5px 5px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 5px 5px rgba(50, 50, 50, 0.75);
 }
 #portal-globalnav li {
 }
 #portal-globalnav li a {
     display: inline-block;
+    padding: 0.5em 1em 2em 1em;
     background: #002855;
     color: White;
     min-width: 6em;
@@ -127,9 +124,6 @@ q {
     /*TODO: Once we have removed the whitespace from the nav template, this can be put back*/
     /*border-bottom: 0.1em solid White;*/
     border-right: 0.1em solid #99A8C2;
-    text-transform: uppercase;
-    font-size: 1.2em;
-    padding: 0.8em 10px;
     
 }
 
@@ -157,7 +151,6 @@ q {
     -webkit-border-bottom-left-radius: 0.5em;
     -moz-border-radius-bottomleft: 0.5em;
     -moz-border-radius-bottomright: 0.5em;
-    margin-right: 5%;
 }
 #portal-personaltools #anon-personalbar a {
     float: left;
@@ -186,7 +179,7 @@ q {
     float: right;
     text-align: left;
     clear: right;
-    margin: 1.2em 5em 1.2em 0;
+    margin: 1.2em 0;
     font-size: 80%;
 }
 
@@ -275,10 +268,6 @@ input.searchField {
     font-size: 80%;
     margin-bottom: 1em;
     margin-left: 0.25em;
-    position: absolute;
-    text-align: right;
-    top: -2em;
-    width: 100%;
 }
 #portal-breadcrumbs a {
     border-bottom: none;
@@ -335,12 +324,9 @@ dl dt span.summary a {
 /* @group Portlets */
 
 dl.portlet {
-    margin: 0 -1px 3em 20%;
+    margin: 0 0 1em;
     font-size: 80%;
-    border-top: 1px solid #335379;
-    border-bottom: 1px solid #335379;
-    border-left: 1px solid #335379;
-    background-color:#FFFFFF;
+    border: 1px solid #002855;
 }
 dl.portlet.slideshowPortlet {
     border: none;
@@ -352,11 +338,11 @@ dl.portletError {
 
 dl.portlet dt,
 div.portletAssignments div.portletHeader {
-    padding: 0.5em 6px 0.55em 12px;
-    color: #002855;
-    background: #ECD47F;
+    padding: 0.42em 1em;
+    color: white;
+    background: #002855;
     line-height: normal;
-    font-size:1em;
+    border-bottom: 0.2em solid #BF9900;
 }
 dl.portlet dt.hiddenStructure {
     padding: 0;
@@ -377,7 +363,7 @@ div.portletAssignments .managedPortletActions a {
 dl.portlet dt a:link,
 dl.portlet dt a:visited,
 dl.portlet dt a:hover {
-    color: #002855;
+    color: white;
     display: block;
     border: none;
 }
@@ -468,7 +454,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background: #ECE0B2
     clear: both;
     font-size: 80%;
-    margin: 1em 0.25em 2em 1em;
+    margin: 1em 0.25em 2em 0.25em;
 }
 
 /* Special case of #content - TinyMCE */
@@ -484,9 +470,7 @@ body#content {
     margin-top: 0;
     color: #002855;
     font-weight: normal;
-    font-size: 2.25em;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
+    border-bottom: 0.1em solid #CCAD33;
 }
 
 #content p,
@@ -494,8 +478,9 @@ body#content {
 #content dl,
 dl.portlet p,
 dl.portlet {
-    
-    
+    margin-bottom: 1em;
+    width:110%;
+    background-color:#FFFFFF;
 }
 
 #content ul,
@@ -2130,30 +2115,5 @@ a.historyComparePrevious span {
     display: none;
 }
 
-
-/* new overrides  */
-#portal-column-one {
-	padding: 5em 0;
-	border-right: 1px solid #002855;
-	width: 25%;
-}
-#portal-column-content {
-	border-top: 1px solid #002855;
-}
-body div.width-full {
-    width: 100%;
-}
-body div.position-0 {
-    margin-left: -100%;
-}
-body div.position-1\:4 {
-    margin-left: -75%;
-}
-body div.width-3\:4 {
-    width: 70%;
-}
-#portal-columns {
-	margin-top: 2em;
-}
 
 /* @end */

@@ -1,0 +1,4 @@
+<layers>
+    <layer name="ucdavis.plonetheme"
+        interface="ucdavis.plonetheme.browser.interfaces.IPlonethemeTheme" />
+</layers>

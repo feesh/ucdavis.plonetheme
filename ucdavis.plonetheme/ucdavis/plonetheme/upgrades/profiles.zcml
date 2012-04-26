@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+  
+  <genericsetup:registerProfile
+      name="1001to1002"
+      title="Upgrade to ResponsiveTheme profile 1002"
+      description="" 
+      directory="profiles/1001to1002"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+</configure>
