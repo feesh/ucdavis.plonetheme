@@ -113,7 +113,7 @@ q {
     margin: 0 0 1em 0;
     padding: 0 5%;
     -webkit-box-shadow: 0px 5px 5px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    0px 5px 5px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 5px rgba(50, 50, 50, 0.75);
 	box-shadow:         0px 5px 5px rgba(50, 50, 50, 0.75);
 }
 #portal-globalnav li {
@@ -337,11 +337,14 @@ dl dt span.summary a {
 dl.portlet {
     margin: 0 -1px 3em 20%;
     font-size: 80%;
+    background-color:#FFFFFF;
+}
+#ucd-side-border dl.portlet {
     border-top: 1px solid #335379;
     border-bottom: 1px solid #335379;
     border-left: 1px solid #335379;
-    background-color:#FFFFFF;
 }
+
 dl.portlet.slideshowPortlet {
     border: none;
 }
@@ -398,6 +401,7 @@ a.managePortletsFallback {
     border-radius: 0.5em;
     -webkit-border-radius: 0.5em;
     -moz-border-radius: 0.5em;
+    width: 45%;
 }
 a.managePortletsFallback {
     display:inline-block; /* in order for our vertical margins to work on inline element */
@@ -2131,13 +2135,15 @@ a.historyComparePrevious span {
 }
 
 
-/* new overrides  */
+/* overrides */
 #portal-column-one {
 	padding: 5em 0;
-	border-right: 1px solid #002855;
 	width: 25%;
 }
-#portal-column-content {
+#ucd-side-border #portal-column-one {
+	border-right: 1px solid #002855;
+}
+#ucd-side-border #portal-column-content {
 	border-top: 1px solid #002855;
 }
 body div.width-full {
@@ -2152,8 +2158,15 @@ body div.position-1\:4 {
 body div.width-3\:4 {
     width: 70%;
 }
+body div.position-3\:4 {
+    margin-left: -30%;
+}
+body div.width-1\:4 {
+    width: 25%;
+}
 #portal-columns {
 	margin-top: 2em;
 }
+/* end overrides */
 
 /* @end */
