@@ -1,0 +1,34 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+    <theme href="theme.html" />
+
+
+    <!-- title -->
+    <replace content='/html/head/title'    
+               theme='/html/head/title' />
+
+    <!-- content area -->
+    <copy content='//*[@id="front-page-image"]'    
+               theme='//*[@id="front-page-image"]' />
+
+
+
+    <replace content='//*[@id="portal-globalnav"]' 
+            theme='//*[@class="primary_nav"]' />
+
+    <!-- Portlets -->
+   <copy content='//*[@id="portal-logo"]' 
+         theme='//*[@id="title"]' />
+
+   <copy content='//*[@id="portal-personaltools"]'
+         theme='//*[@id="links"]' />
+   
+
+<drop content='//*/dl/dd/a/img' /> 
+
+</rules>
+

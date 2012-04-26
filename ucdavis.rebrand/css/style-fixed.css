@@ -1,0 +1,12 @@
+/* Layout */
+
+#staticbody {
+        background: #ffffff url(colbg.gif) repeat-y 0% 0; 
+}
+
+#leftcolumn {
+	clear: left; 
+	margin: 25px 0px 0 20px;
+    font-size:12px;
+    width: 530px;
+	}

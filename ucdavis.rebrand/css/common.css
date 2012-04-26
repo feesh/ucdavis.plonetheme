@@ -1,0 +1,827 @@
+/*------------------------------TOP-LEVEL STYLE DEFAULTS------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Verdana", "Arial", sans-serif;
+    font-size: 100%;
+    min-width: 56em;
+}
+
+img {
+    border: 0px none;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+}
+
+    a:hover {
+        border-bottom: 0px none;
+    }
+
+/*  #main a[href^="http://"], 
+    #main a[href^="https://"] {
+        background: url("../../images/common/external-link-icon.png") no-repeat scroll right center transparent;
+        padding-right: 14px;
+    }
+    
+    #main a.no_linkout[href^="http://"], 
+    #main a.no_linkout[href^="https://"] {
+        background: none;
+        padding-right: 0;
+    }*/
+    
+    #main a[name] {
+        border-bottom: 0px none;
+        height: 0;
+    }
+    
+    #sb-nav a {
+        border-bottom: 0px none;
+    }
+
+.clearer {
+    clear: both;
+/*  height: 0px;*/
+    line-height: 0px;
+}
+
+
+/* sets the default gutters and limits for content stretch */
+.outer_wrap {
+    width: 90%;
+    min-width: 56em;
+    max-width: 87.5em;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* sets the default gutters minimum */
+.inner_wrap {
+    padding: 0 20px;
+    position: relative;
+}
+
+/* ---------- CSS for revised skip navigation HTML ---------- */
+#navskip a, #navskip a:hover, #navskip a:visited {
+    position: absolute;
+    left: 0px;
+    top: -500px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#navskip a:active, #navskip a:focus {
+    position: absolute;
+    width: auto;
+    height: auto;
+    font-size: .8em;
+    color: #002666;
+    background: #FFF;
+    top: 0; 
+    left: .2em;
+    overflow: visible;
+    z-index: 999;
+ } 
+ 
+/*------------------------------PRIMARY CONTENT CONTAINERS------------------------------*/
+
+#header_content,
+.nav_content,
+#breadcrumbs_content,
+#main_content,
+#footer_content {
+    overflow: hidden;
+}
+
+
+/*------------------------------HEADER------------------------------*/
+
+#header {
+    overflow: hidden;
+}
+
+    #header_content #ucdavis_logo {
+        float: right;
+    }
+
+    #header_content #ucdavis_logo a {
+        border-bottom: 0px none;
+    }
+
+/*------------------------------SITE TITLE AREA------------------------------*/
+
+#site_title {
+/*  overflow: hidden;*/
+    position: relative;
+    z-index: 10;
+}
+
+#title_area_content {
+    position: relative;
+}
+
+    #site_title #title {
+        margin: 0 0 0 -5px;
+        padding: 0 0 15px 0;
+    }
+    
+        #site_title #title.logo {
+            padding-top: 32px;
+        }
+    
+        #site_title #title.logo h1 {
+            margin: 0;
+        }
+    
+        #site_title #title.heading {
+            padding-top: 45px;
+        }
+    
+        #site_title #title.heading h1 {
+            display: block;
+            margin: 0;
+            color: #002855;
+            font-size: 2em;
+        }
+        
+        #site_title a {
+            border: 0 none;
+         }
+        
+        #site_title a img {
+            border: 0 none;
+        }
+    
+    
+    
+    
+    #site_title #title_area_links {
+/*    margin-left: 285px;*/
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 99;
+    }
+
+        #site_title #title_area_links ul {
+            list-style-type: none;
+        }
+
+        #site_title #title_area_links ul a {
+            font-size: 0.75em;
+        }
+
+    /* Header links section */
+    
+        #site_title #title_area_links ul#links {
+            position: relative;
+            float: right;
+            margin: 9px 10px 0 0;
+            padding: 0;
+        }
+
+        #site_title #title_area_links ul#links li {
+            display: inline;
+            padding: 0;
+            margin: 0;
+        }
+
+        #site_title #title_area_links ul#links a {
+            display: block;
+            float: left;
+            margin: 0 0 0 1.25em;
+            padding: 0;
+        }
+
+        #site_title #title_area_links ul#links li span.here {
+            display: block;
+            float: left;
+            font-size: 0.75em;
+            margin: 0.7em 0 0 1.5em;
+            padding: 0;
+            font-weight: bold;
+        }
+        
+
+/*------------------------------PRIMARY NAVIGATION BAR------------------------------*/
+
+#nav {
+    z-index: 2;
+    min-width: 100%;
+}
+
+.shadow {
+    -moz-box-shadow: 0px 4px 8px #000;
+    -webkit-box-shadow: 0px 4px 8px #000;
+    box-shadow: 0px 4px 8px #000;
+    /* For IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#000000')";
+    /* For IE 5.5 - 7 */
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=5, Direction=180, Color='#000000');
+}
+
+.nav_background {
+    overflow: hidden;
+}
+
+    .nav_content {
+        position: relative;
+    }
+
+    #nav ul {
+        list-style-type: none;
+        margin: 0 0 0 14px;
+        padding: 0;
+    }
+
+        #nav ul li {
+            position: relative;
+            float: left;
+            margin: 0;
+        }
+
+            #nav ul li a {
+                display: block;
+                text-decoration: none;
+                padding: 0.8em 10px 0.8em;
+                font-size: 0.95em;
+            }
+
+            #nav ul li a {
+                border-bottom: 0px none;
+            }
+
+/*------------------------------MAIN CONTENT------------------------------*/
+
+#main {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+
+    .social_media p {
+        font-size: 0.85em;
+        margin: 0;
+        padding: 0.8em 10px 0.2em;
+    }
+
+    .social_media ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0.4em 2px 0 2px;
+        overflow: hidden;
+    }
+
+        .social_media ul li {
+            float: left;
+            padding: 0;
+        }
+    
+            .social_media ul li a {
+                display: block;
+                margin: 0;
+                padding: 4px;
+                border: 0 none;
+            }
+        
+                .social_media ul li a img {
+                    border: 0 none;
+                    width: 38px;
+                }
+            
+
+    #main p.more_link {
+        margin-top: 1em;
+        padding: 0;
+    }
+
+        #main .more_link a {
+            display: block;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 0;
+            padding: 0.4em 20% 0.4em 10px;
+            border: 0 none !important;
+        }
+
+        #main .more_link a:hover,
+        #main .more_link a:focus {
+            border: 0 none;
+        }
+    
+/*------------------------CONTENT BOXES----------------------*/
+
+/* ***Root styles*** */
+
+    #main .content_box {
+        overflow: hidden;
+        padding: 0;
+        margin-top: 0.7em;
+    }
+
+        #main .content_box img {
+            width: 100%;
+        }
+
+        .top_item {
+/*          margin-top: 0 !important;*/
+/*          margin-top: 0;*/
+        }
+
+        #main .content_box h2,
+        #main .content_box h3,
+        #main .content_box h4,
+        #main .content_box h5,
+        #main .content_box h6 {
+            margin: 0.8em 10px 0.5em;
+            padding: 0;
+        }
+        
+        #main .content_box h4 {
+            font-size: 0.9em;
+        }
+
+        #main .content_box .headline {
+            font-size: 1em;
+            margin: 0;
+            padding: 0.4em 10px;
+        }
+
+        #main .content_box .headline_top {
+            margin: 0;
+            border-top: 0 none;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        #main .content_box .headline_below_image {
+            margin: 0;
+        }
+
+        #main .content_box .headline_button {
+            padding: 0;
+            margin: 0;
+        }
+
+        #main .content_box .headline_button a {
+            display: block;
+            padding: 0.4em 30px 0.4em 10px;
+            background-position: 95% 50%;
+        }
+
+        #main .content_box ul,
+        #main .content_box ol {
+            margin-top: 0.5em;
+            padding: 0 10px 0 26px;
+        }
+
+        #main .content_box ul li,
+        #main .content_box ol li {
+            line-height: 120%;
+        }
+
+        #main .content_box ul ul li,
+        #main .content_box ol ol li,
+        #main .content_box ol ul li,
+        #main .content_box ol ul li {
+            padding-bottom: 0;
+            line-height: 140%;
+        }
+
+        #main .content_box p {
+            margin: 0.3em 10px;
+            padding: 0;
+        }
+
+            #main .content_box p.attribution {
+                text-align: right;
+                font-style: italic;
+            }
+
+            #main .content_box p.caption {
+                margin: 0;
+                padding: 0.3em 10px 0.45em;
+            }
+
+            #main .content_box p.more_link {
+                clear: both;
+                margin: 0.5em 0 0;
+                padding: 0;
+            }
+
+        #main .content_box a.image_link,
+        #main .content_box a.image_link:hover,
+        #main .content_box a.image_link:focus {
+            border: 0 none;
+            background: 0 none;
+            padding: 0;
+            display: block;
+        }
+
+    #main .minor {
+        font-size: 0.9em;
+    }
+
+        #main .minor .headline {
+
+        }
+
+    #main .unbordered {
+        border: 0 none;
+    }
+    
+    .last_item {
+        margin-bottom: 0;
+    }
+    
+    
+    /* ***Appendices and overrides for right column*** */
+
+    #main .column .content_box {
+        margin: 0 0 1.5em;
+    }
+
+/*  #main .column .content_box h3,
+    #main .column .content_box h4,
+    #main .column .content_box h5,
+    #main .column .content_box h6 {
+        padding: 0.2em 0;
+    }*/
+
+    #main .column .content_box .headline_top {
+        padding: 0.4em 10px;
+        border-top: 0px none;
+        font-size: 0.875em;
+        text-transform: none;
+    }
+
+    #main .column .content_box .headline_below_image {
+
+    }
+
+    #main .column .content_box .headline_strong {
+        padding: 0.4em 10px;
+    }
+
+    #main .column .content_box .headline_button {
+        padding: 0;
+    }
+
+    #main .column .content_box ul,
+    #main .column .content_box ol {
+        margin-top: 0.5em;
+        padding-left: 2px;
+        font-size: 0.8em;
+    }
+
+    #main .column .content_box li {
+        line-height: 140%;
+    }
+
+    #main .column .content_box ul ul,
+    #main .column .content_box ol ul,
+    #main .column .content_box ul ol,
+    #main .column .content_box ol ol {
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+    }
+    
+    #main .column .content_box ul ul,
+    #main .column .content_box ol ol,
+    #main .column .content_box ul ol,
+    #main .column .content_box ol ul {
+        font-size: 0.92em;
+        margin-top: 0.375em;
+    }
+
+    #main .column .content_box ul ul {
+        padding: 0;
+        margin-left: 1.2em;
+    }
+
+    #main .column .content_box ol ul {
+        padding: 0;
+        margin-left: 1.2em;
+    }
+
+    #main .column .content_box ol ol,
+    #main .column .content_box ul ol {
+        padding: 0;
+        margin-left: 2.2em;
+    }
+    
+
+    #main .column .content_box h4, #main .column .content_box h5 {
+        margin: 0.5em 0 0.3em;
+    }
+
+    #main .column .content_box p {
+        margin: 0.3em 0;
+        padding: 0;
+        font-size: 0.8em;
+    }
+
+    #main .column .content_box p.caption {
+        margin: 0em;
+        padding: 0.3em 10px 0.45em;
+        font-size: 0.7em;
+    }
+
+    #main .column .content_box .right img,
+    #main .column .content_box .left img {
+        margin-top: 0.5em;
+    }
+
+
+    #main div.mm_wrapper {
+        height: 100%;
+    }
+
+    #main div.mm_wrapper a {
+        display: block;
+        border-bottom: none;
+        position: relative;
+    }
+
+    #main .feed div.mm_wrapper img {
+        width: 100%;
+        border: 0px none;
+    }
+
+    #main .feed div.mm_wrapper .play_button {
+        background: url("https://cmsresources.ucdavis.edu/cms_v2/images/common/video_play_button.png") no-repeat scroll 0 0 transparent;
+        display: block;
+        height: 48px;
+        left: 50%;
+        margin-left: -24px;
+        margin-top: -24px;
+        position: absolute;
+        text-align: left;
+        top: 50%;
+        width: 48px;
+        z-index: 1;
+    }
+
+
+    #main .column .feed p {
+        margin-top: 0;
+        font-weight: normal;
+    }
+
+    #main .column .feed p.more_link {
+        margin-bottom: 0;
+    }
+
+    #main .column .feed ul {
+        list-style-type: none;
+        margin-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+        #main .column .feed ul li {
+            padding-bottom: 0.75em;
+        }
+        
+            #main .column .feed ul li.featured h3 {
+                margin: 0.4em 0 0;
+                line-height: 140%;
+            }
+        
+            #main .column .feed ul li p {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+            }
+            
+            #main .column .feed ul li p.date {
+                font-size: 0.9em;
+                font-weight: bold;
+                color: #002855;
+            }
+            
+            #main .column .feed ul li.featured p.date {
+                margin-top: 0.8em;
+            }
+            
+            #main .column .feed ul li p.event {
+                font-size: 1em;
+                font-weight: bold;
+                color: #002855;
+            }
+            
+            #main .column .feed ul li h3.event {
+                margin: 0;
+            }
+            
+            #main .column .feed ul li p.event_desc {
+                font-size: 0.9em;
+            }
+            
+        #main .column .feed .thumb {
+            float: right;
+            margin: 0 0 0.8em 0.8em;
+            padding: 0;
+            border: 0 none;
+            width: 40%;
+            max-width: 100px;
+        }
+        
+
+    #main .column .minor {
+        padding: 0 10px 5px;
+    }
+
+        #main .column .minor h2,
+        #main .column .minor h3,
+        #main .column .minor h4,
+        #main .column .minor h5,
+        #main .column .minor h6 {
+            margin: 0.5em 0;
+            padding: 0;
+            font-size: 1.00em;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+
+        #main .column .minor p {
+            margin: 0.5em 0;
+            font-size: 0.90em;
+        }
+
+
+    #main .column .mm_box .headline {
+        padding: 0.4em 10px;
+    }
+
+    #main .column .mm_box a {
+        border-bottom: 0px none;
+        display: block;
+    }
+
+    #main .column .mm_box .mm_info {
+        padding: 0 10px;
+        font-size: 0.7em;
+    }
+
+    #main .column .mm_box .mm_credit {
+        padding: 0 10px;
+        font-size: 0.7em;
+    }
+
+
+    
+    
+
+    .widest {
+        width: 100%;
+    }
+
+    .extra_wide {
+        width: 420px;
+    }
+
+    .wide {
+        width: 360px;
+    }
+
+    .medium {
+        width: 260px;
+    }
+
+    .medium_narrow, .middling {
+        width: 160px;
+    }
+
+    .narrow {
+        width: 100px;
+    }
+
+    .right {
+        float: right;
+        clear: right;
+        margin: 0 0 1em 1em;
+    }
+
+    .left {
+        float: left;
+        clear: left;
+        margin: 0 1em 1em 0;
+    }
+
+    /* to set width to auto when you want to float an img within a box and have it display at true size */
+    .native_width {
+        width: auto;
+    }
+
+
+    #main .content_box ul.featured_links {
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5em 0 0 0;
+    }
+
+    #main .content_box ul.featured_links + p.more_link {
+        margin-top: 1.6em;
+    }
+
+        #main .content_box ul.featured_links li {
+            margin: 0;
+            padding: 0;
+        }
+        
+            #main .content_box ul.featured_links li a {
+                display: block;
+                color: #002855;
+                background: #FFF url('https://cmsresources.ucdavis.edu/cms_v2/images/common/arrow_small_right_002666.gif') scroll no-repeat 95% 50%;
+                font-size: 1.1em;
+                font-weight: normal;
+                margin: 0;
+                padding: 0.55em 18% 0.55em 10px;
+                text-transform: uppercase;
+                border-bottom: 1px solid #B2B2B2;
+            }
+
+                #main .content_box ul.featured_links li a:hover,
+                #main .content_box ul.featured_links li a:focus {
+                    background: #B2BECC url('https://cmsresources.ucdavis.edu/cms_v2/images/common/arrow_small_right_002666.gif') scroll no-repeat 95% 50%;
+                    border-bottom: 1px solid #B2BECC;
+                }
+
+
+    /* ***Multimedia styles*** */
+
+    .mm_box {
+        overflow: hidden;
+    }
+
+    .mm_activate {
+        position: relative;
+    }
+
+                    /* Change path for play button below */
+    .play_button {
+        background: url("../../images/common/video_play_button.png") no-repeat scroll 0 0 transparent;
+        display: block;
+        height: 48px;
+        left: 50%;
+        margin-left: -24px;
+        margin-top: -24px;
+        position: absolute;
+        text-align: left;
+        top: 50%;
+        width: 48px;
+    }
+
+    #main .mm_info {
+        font-weight: bold;
+        font-size: 0.7em;
+        margin-bottom: 0.5em;
+    }
+
+    #main .mm_credit {
+        font-size: 0.7em;
+    }
+
+
+/*------------------------------FOOTER------------------------------*/
+
+#footer {
+    overflow: hidden;
+    text-align: center;
+    clear: both;
+}
+
+    #footer #footer_links {
+        overflow: hidden;
+        font-size: 0.8em;
+        margin: 0 auto;
+        padding: 1em 0;
+    }
+
+        #footer #footer_links ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            #footer #footer_links ul li {
+                display: inline-block;
+                margin: 0;
+                padding: 0 1.25em 0.5em;
+            }
+
+    #footer #standard_footer {
+        margin: 0;
+        padding: 1em 0 0 0;
+    }
+
+        #footer #standard_footer p {
+            font-size: 0.7em;
+        }
