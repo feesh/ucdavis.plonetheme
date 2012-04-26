@@ -3,7 +3,7 @@
 <object name="portal_skins" allow_any="False" cookie_persistence="False"
    default_skin="UCDavis Plonetheme">
 
- <object name="ucdavis.plonetheme_styles"
+ <object name="ucdavis_plonetheme_styles"
     meta_type="Filesystem Directory View"
     directory="ucdavis.plonetheme:skins/ucdavis_plonetheme_styles" />
 
